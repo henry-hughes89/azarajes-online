@@ -35,3 +35,5 @@ No publiques ni compartas el token privado de jugador. El enlace para invitar al
 4. Pruebas con dos navegadores, reconexiones, carreras y acciones duplicadas.
 
 **Estado de verificación:** las pruebas unitarias se ejecutaron con Node local. El Worker todavía no se ha desplegado en Cloudflare ni probado en su runtime real. No se ofrece como servidor listo para partidas.
+
+Servidor AZARAJES - primera implementación.
