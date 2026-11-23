@@ -39,7 +39,7 @@ export default {
 
     const match = /^\/api\/rooms\/([A-Z0-9]{8})\/(join|state|ws-ticket|ws)$/.exec(url.pathname);
     if (!match || !validCode(match[1])) return headers(fail('Ruta o código de sala inválido',404));
-    const [,,code,operation] = match;
+    const [,code,operation] = match;
     const upgrade = operation === 'ws';
     if (upgrade && !(request.headers.get('upgrade') || '').toLowerCase().includes('websocket')) {
       return headers(fail('Se requiere WebSocket',426));
